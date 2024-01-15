@@ -1,0 +1,1905 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Regression Test Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Regression Test Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jan 13, 2024 12:01:08 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jan 13, 2024 12:01:08 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jan 13, 2024 12:01:35 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>9</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>9</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='100%'><b>9</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='12%'><b>9</b> steps passed</small></div>
+<div>
+<small data-tooltip='12%'><b>9</b> steps failed,
+<b>53</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"US01 Homepage Navigation":8.239,"US03 Verify that users can filter and sort search results effectively.":26.065,"US02 Verify that user can use search functionalty by destination and by dates":26.053,"US04 hotel details":17.807,"US08 Confirm that user accounts can be managed successfully.":0.023,"US05 Verify Hotel Detail Buttons":0.025,"US07 Going to the booking page":0.01,"US09 Error Handling":0.008,"US06 Confirm that house details pages provide accurate information.":0.009
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@US09</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@us06</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@US02</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@US09_TC001</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@Us_04</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@Smoke</td>
+<td>0</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@US07_Booking</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@US03</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@US_08</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@tb_US_01</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>os</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 9,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 9,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 9,
+failGrandChild: 9,
+warningGrandChild: 0,
+skipGrandChild: 53,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@US09</a><a class="dropdown-item" href="#">@us06</a><a class="dropdown-item" href="#">@US02</a><a class="dropdown-item" href="#">@US09_TC001</a><a class="dropdown-item" href="#">@Us_04</a><a class="dropdown-item" href="#">@Smoke</a><a class="dropdown-item" href="#">@US07_Booking</a><a class="dropdown-item" href="#">@US03</a><a class="dropdown-item" href="#">@US_08</a><a class="dropdown-item" href="#">@tb_US_01</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">US01 Homepage Navigation</p>
+            <p class="text-sm">
+              <span>12:01:09 PM</span> / <span>00:00:08:239</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">US01 Homepage Navigation</h5>
+<span class='badge badge-success'>01.13.2024 12:01:09 PM</span>
+<span class='badge badge-danger'>01.13.2024 12:01:17 PM</span>
+<span class='badge badge-default'>00:00:08:239</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Homepage load and  search bar is functional</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="project.stepDefinitions.US_01_Homepage_Navigation.userGoesToPage(java.lang.String)">
+                <span>Given User goes to "https://www.trivago.com/" page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="project.stepDefinitions.US_01_Homepage_Navigation.userShouldBeOnPage(java.lang.String)">
+                <span>Then User should be on "https://www.trivago.com/" page</span>
+      <div>
+        <textarea disabled class="code-block">org.junit.ComparisonFailure: The URL is not as expected! expected:<...ps://www.trivago.com[]/> but was:<...ps://www.trivago.com[.]/>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at project.stepDefinitions.US_01_Homepage_Navigation.userShouldBeOnPage(US_01_Homepage_Navigation.java:33)
+	at ✽.User should be on "https://www.trivago.com/" page(file:///Users/aycapolatkamali/IdeaProjects/Trivagooo/Trivagooo/./src/test/resources/features/US_01_Homepage_Navigation.feature:7)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_01_Homepage_Navigation.userSelectToOnWhereToButton(java.lang.String)">
+                <span>Then User select to "Washington D.C." on Where to? button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_01_Homepage_Navigation.userClicksCheckInButton_tb()">
+                <span>And User  clicks checkIn button_tb</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_01_Homepage_Navigation.userClicksToCloseButtonOnTheCheckInField()">
+                <span>And User clicks to close button on the check in field</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_01_Homepage_Navigation.userClicksToSearchButton_tb()">
+                <span>And User clicks to Search button_tb</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_01_Homepage_Navigation.userVerifyTheSearchButtonOnTheWebPage()">
+                <span>And User verify the  search button on the web page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">US03 Verify that users can filter and sort search results effectively.</p>
+            <p class="text-sm">
+              <span>12:01:09 PM</span> / <span>00:00:26:065</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">US03 Verify that users can filter and sort search results effectively.</h5>
+<span class='badge badge-success'>01.13.2024 12:01:09 PM</span>
+<span class='badge badge-danger'>01.13.2024 12:01:35 PM</span>
+<span class='badge badge-default'>00:00:26:065</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="4"><span class="badge log fail-bg mr-2">Fail</span>TC01 Filtering and Sorting</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="project.stepDefinitions.US_03_FilteringandSortingStepDef.userNavigateTo(java.lang.String)">
+                <span>Given User navigate to "url"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="project.stepDefinitions.US_03_FilteringandSortingStepDef.userClicksOnDestinationHomePage()">
+                <span>Then User clicks on Destination home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="project.stepDefinitions.US_03_FilteringandSortingStepDef.userClicksSearchButton()">
+                <span>And User clicks search button</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.216)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.2.1', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f6b769aded5abf6c52bb5cd02d7ed7a, findElement {using=xpath, value=//*[@id='input-auto-complete']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.216, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/qz/5jh1rqtn3rq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49694}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49694/devtoo..., se:cdpVersion: 120.0.6099.216, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f6b769aded5abf6c52bb5cd02d7ed7a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.sendKeys(Unknown Source)
+	at project.stepDefinitions.US_03_FilteringandSortingStepDef.userClicksSearchButton(US_03_FilteringandSortingStepDef.java:29)
+	at ✽.User clicks search button(file:///Users/aycapolatkamali/IdeaProjects/Trivagooo/Trivagooo/./src/test/resources/features/US_03_FilteringandSorting.feature:9)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_03_FilteringandSortingStepDef.userClicksOnPriceAndChooseScrollButtonAndChangeThePrice()">
+                <span>And User clicks on price and choose scroll button and change the price</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_03_FilteringandSortingStepDef.userClicksOnFilters()">
+                <span>And User clicks on Filters</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_03_FilteringandSortingStepDef.userClicksFivestarAndPopularFiltersAndChooseFreeCancellationBox()">
+                <span>And User clicks fivestar and Popular filters and choose Free cancellation box</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_03_FilteringandSortingStepDef.userClicksOnGuestRatingAndChooseExcellent()">
+                <span>And User clicks on Guest Rating and choose Excellent</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_03_FilteringandSortingStepDef.userClicksOnPropertyTypeAndChooseHotelBox()">
+                <span>And User clicks on Property Type and choose Hotel box</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_03_FilteringandSortingStepDef.userReviewTheResultAccordingToTheSelectedSortingCriteriaAndConfirmAccuracy()">
+                <span>And User review the result according to the selected sorting criteria and confirm accuracy</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">US02 Verify that user can use search functionalty by destination and by dates</p>
+            <p class="text-sm">
+              <span>12:01:09 PM</span> / <span>00:00:26:053</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">US02 Verify that user can use search functionalty by destination and by dates</h5>
+<span class='badge badge-success'>01.13.2024 12:01:09 PM</span>
+<span class='badge badge-danger'>01.13.2024 12:01:35 PM</span>
+<span class='badge badge-default'>00:00:26:053</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="7"><span class="badge log fail-bg mr-2">Fail</span>TC_02_Searching</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="project.stepDefinitions.US_02_StepDefs.user_goes_to(java.lang.String)">
+                <span>Given user goes to "Trivago"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="project.stepDefinitions.US_02_StepDefs.user_input_on_where_to_field(java.lang.String)">
+                <span>Then user input "Banf" on where to field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="project.stepDefinitions.US_02_StepDefs.userClicksCheckInButton()">
+                <span>And user clicks CheckIn button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="project.stepDefinitions.US_02_StepDefs.userSelectsCheckInData()">
+                <span>And user selects check in data</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.216)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.2.1', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f6b769aded5abf6c52bb5cd02d7ed7a, findElement {using=xpath, value=//label[@data-testid="tonight-index-label"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.216, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/qz/5jh1rqtn3rq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49694}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49694/devtoo..., se:cdpVersion: 120.0.6099.216, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f6b769aded5abf6c52bb5cd02d7ed7a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+	at project.stepDefinitions.US_02_StepDefs.userSelectsCheckInData(US_02_StepDefs.java:43)
+	at ✽.user selects check in data(file:///Users/aycapolatkamali/IdeaProjects/Trivagooo/Trivagooo/./src/test/resources/features/US_02_Search.feature:10)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_02_StepDefs.userClicksApplyButtonForGuest()">
+                <span>And user clicks apply button for guest</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_02_StepDefs.userClicksOnSearchButton()">
+                <span>And user clicks on Search button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_02_StepDefs.userPresesCloseButtonToBeAbleToCloseTheGuestWindows()">
+                <span>And user preses close button to be able to close the guest windows</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_02_StepDefs.verifyTheHotelsAppearOnTheWindow()">
+                <span>Then verify the  hotels appear on the window</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="18"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">US04 hotel details</p>
+            <p class="text-sm">
+              <span>12:01:17 PM</span> / <span>00:00:17:807</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">US04 hotel details</h5>
+<span class='badge badge-success'>01.13.2024 12:01:17 PM</span>
+<span class='badge badge-danger'>01.13.2024 12:01:35 PM</span>
+<span class='badge badge-default'>00:00:17:807</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="19"><span class="badge log fail-bg mr-2">Fail</span>Verify hotel details</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="project.stepDefinitions.Us_06_House_Details.user_go_to_home_page()">
+                <span>Given user go to home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="project.stepDefinitions.Us_06_House_Details.user_clicks_on_search_button()">
+                <span>Then user clicks on search button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="project.stepDefinitions.Us_06_House_Details.user_clicks_property_type_dropdown_menu()">
+                <span>Then user clicks property type dropdown menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="project.stepDefinitions.US_04_hotel_details.user_selects_the_hotel_checkbox()">
+                <span>Then user selects the Hotel checkbox</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //li[@data-testid='accommodation-type-filter-hotel']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.2.1', java.version: '20.0.2'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+	at project.stepDefinitions.US_04_hotel_details.user_selects_the_hotel_checkbox(US_04_hotel_details.java:17)
+	at ✽.user selects the Hotel checkbox(file:///Users/aycapolatkamali/IdeaProjects/Trivagooo/Trivagooo/./src/test/resources/features/US_04_Hotel_details.feature:9)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.Us_06_House_Details.user_clicks_the_apply_button()">
+                <span>Then user clicks the apply button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_04_hotel_details.user_verify_the_hotel_price_is_visible()">
+                <span>And user verify the hotel price is visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.Us_06_House_Details.userClicksCityCenterButton()">
+                <span>And user clicks city center button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.Us_06_House_Details.userVerifyTopAmenitiesListIsVisible()">
+                <span>Then user verify top amenities list is visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="41"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">US08 Confirm that user accounts can be managed successfully.</p>
+            <p class="text-sm">
+              <span>12:01:35 PM</span> / <span>00:00:00:023</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">US08 Confirm that user accounts can be managed successfully.</h5>
+<span class='badge badge-success'>01.13.2024 12:01:35 PM</span>
+<span class='badge badge-danger'>01.13.2024 12:01:35 PM</span>
+<span class='badge badge-default'>00:00:00:023</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=41</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="42"><span class="badge log fail-bg mr-2">Fail</span>User Account Management</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="project.stepDefinitions.US_08_User_Account_Management.go_to_home_page()">
+                <span>Given Go to home page</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.216)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.2.1', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f6b769aded5abf6c52bb5cd02d7ed7a, get {url=https://www.trivago.com/en-US}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.216, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/qz/5jh1rqtn3rq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49694}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49694/devtoo..., se:cdpVersion: 120.0.6099.216, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f6b769aded5abf6c52bb5cd02d7ed7a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:305)
+	at project.stepDefinitions.US_08_User_Account_Management.go_to_home_page(US_08_User_Account_Management.java:22)
+	at ✽.Go to home page(file:///Users/aycapolatkamali/IdeaProjects/Trivagooo/Trivagooo/./src/test/resources/features/US_08_User%20Account%20Management.feature:7)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_08_User_Account_Management.log_in_as_a_user()">
+                <span>Then Log in as a user</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_08_User_Account_Management.click_on_the_log_in_button()">
+                <span>Then Click on the log in button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_08_User_Account_Management.click_on_the_user_account_button()">
+                <span>When Click on the user account button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_08_User_Account_Management.click_on_the_account_settings_box()">
+                <span>And Click on the account settings box</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_08_User_Account_Management.update_user_last_name()">
+                <span>Then Update user last name</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_08_User_Account_Management.click_on_the_user_account_button_to_see_dropdown()">
+                <span>Then Click on the user account button to see dropdown</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_08_User_Account_Management.click_on_the_recently_viewed_to_see_before_booking()">
+                <span>Then Click on the recently viewed to see before booking</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_08_User_Account_Management.verify_before_booking_is_visible()">
+                <span>Then Verify before booking is visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="43"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">US05 Verify Hotel Detail Buttons</p>
+            <p class="text-sm">
+              <span>12:01:35 PM</span> / <span>00:00:00:025</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">US05 Verify Hotel Detail Buttons</h5>
+<span class='badge badge-success'>01.13.2024 12:01:35 PM</span>
+<span class='badge badge-danger'>01.13.2024 12:01:35 PM</span>
+<span class='badge badge-default'>00:00:00:025</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=43</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="44"><span class="badge log fail-bg mr-2">Fail</span>Verify Hotel Detail</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="project.stepDefinitions.US_05_Verify_hotel_detail_buttons.clientNavigateTo(java.lang.String)">
+                <span>Given Client navigate to "url"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.216)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.2.1', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f6b769aded5abf6c52bb5cd02d7ed7a, get {url=https://www.trivago.com./}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.216, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/qz/5jh1rqtn3rq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49694}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49694/devtoo..., se:cdpVersion: 120.0.6099.216, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f6b769aded5abf6c52bb5cd02d7ed7a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:305)
+	at project.stepDefinitions.US_05_Verify_hotel_detail_buttons.clientNavigateTo(US_05_Verify_hotel_detail_buttons.java:21)
+	at ✽.Client navigate to "url"(file:///Users/aycapolatkamali/IdeaProjects/Trivagooo/Trivagooo/./src/test/resources/features/US_05_Verify_Hotel_Details.feature:6)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_05_Verify_hotel_detail_buttons.clientClicksOnDestinationAndAddsProperCountry()">
+                <span>When Client clicks on Destination and adds proper country</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_05_Verify_hotel_detail_buttons.clientClicksOnSearchButton()">
+                <span>Then Client clicks on search button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_05_Verify_hotel_detail_buttons.clientClicksOnFairmontHotSpringsResortHotel()">
+                <span>Then Client clicks on Fairmont Hot Springs Resort hotel</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_05_Verify_hotel_detail_buttons.clientClicksOnInfoButton()">
+                <span>Then Client clicks on Info button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_05_Verify_hotel_detail_buttons.clientClicksOnPhotosButton()">
+                <span>Then Client clicks on Photos button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_05_Verify_hotel_detail_buttons.clientClicksOnReviewsButton()">
+                <span>Then Client clicks on Reviews button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_05_Verify_hotel_detail_buttons.clientClicksOnPricesButton()">
+                <span>And Client clicks on Prices button</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="47"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">US07 Going to the booking page</p>
+            <p class="text-sm">
+              <span>12:01:35 PM</span> / <span>00:00:00:010</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">US07 Going to the booking page</h5>
+<span class='badge badge-success'>01.13.2024 12:01:35 PM</span>
+<span class='badge badge-danger'>01.13.2024 12:01:35 PM</span>
+<span class='badge badge-default'>00:00:00:010</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=47</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="48"><span class="badge log fail-bg mr-2">Fail</span>Verify the going to booking page successfully</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="project.stepDefinitions.US_03_FilteringandSortingStepDef.userNavigateTo(java.lang.String)">
+                <span>Given User navigate to "url"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.216)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.2.1', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f6b769aded5abf6c52bb5cd02d7ed7a, get {url=https://www.trivago.com./}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.216, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/qz/5jh1rqtn3rq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49694}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49694/devtoo..., se:cdpVersion: 120.0.6099.216, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f6b769aded5abf6c52bb5cd02d7ed7a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:305)
+	at project.stepDefinitions.US_03_FilteringandSortingStepDef.userNavigateTo(US_03_FilteringandSortingStepDef.java:18)
+	at ✽.User navigate to "url"(file:///Users/aycapolatkamali/IdeaProjects/Trivagooo/Trivagooo/./src/test/resources/features/US_07_Booking.feature:7)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_03_FilteringandSortingStepDef.userClicksOnDestinationHomePage()">
+                <span>Then User clicks on Destination home page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_07_Booking.user_enters_a_destination()">
+                <span>When User enters a destination</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_07_Booking.user_enters_check_in_date()">
+                <span>And User enters check in date</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_07_Booking.user_enter_check_out_date()">
+                <span>And User enter check out date</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_07_Booking.user_clicks_on_search_button()">
+                <span>And User clicks on search button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_07_Booking.user_clicks_on_first_view_deal_button()">
+                <span>And User clicks on first view deal button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_07_Booking.user_verifies_the_booking_page_in_another_tab()">
+                <span>And User verifies the booking page in another tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_07_Booking.userClicksOnBookingButton()">
+                <span>And User clicks on booking button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_07_Booking.userVerifyBookingInformation()">
+                <span>Then User verify booking information</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="74"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">US09 Error Handling</p>
+            <p class="text-sm">
+              <span>12:01:35 PM</span> / <span>00:00:00:008</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">US09 Error Handling</h5>
+<span class='badge badge-success'>01.13.2024 12:01:35 PM</span>
+<span class='badge badge-danger'>01.13.2024 12:01:35 PM</span>
+<span class='badge badge-default'>00:00:00:008</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=74</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="75"><span class="badge log fail-bg mr-2">Fail</span>Submit an invalid search query and validate the error message.</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="project.stepDefinitions.US_03_FilteringandSortingStepDef.userNavigateTo(java.lang.String)">
+                <span>Given User navigate to "url"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.216)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.2.1', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f6b769aded5abf6c52bb5cd02d7ed7a, get {url=https://www.trivago.com./}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.216, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/qz/5jh1rqtn3rq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49694}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49694/devtoo..., se:cdpVersion: 120.0.6099.216, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f6b769aded5abf6c52bb5cd02d7ed7a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:305)
+	at project.stepDefinitions.US_03_FilteringandSortingStepDef.userNavigateTo(US_03_FilteringandSortingStepDef.java:18)
+	at ✽.User navigate to "url"(file:///Users/aycapolatkamali/IdeaProjects/Trivagooo/Trivagooo/./src/test/resources/features/US_09_Error_Handling.feature:6)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_09_Error_Handling.user_clicks_on_search_query_box()">
+                <span>Given User clicks on search query box</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_09_Error_Handling.user_enters_invalid_data()">
+                <span>When User enters invalid data</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.US_09_Error_Handling.user_should_see_the_error_message()">
+                <span>Then User should see the error message.</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="77"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">US06 Confirm that house details pages provide accurate information.</p>
+            <p class="text-sm">
+              <span>12:01:35 PM</span> / <span>00:00:00:009</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">US06 Confirm that house details pages provide accurate information.</h5>
+<span class='badge badge-success'>01.13.2024 12:01:35 PM</span>
+<span class='badge badge-danger'>01.13.2024 12:01:35 PM</span>
+<span class='badge badge-default'>00:00:00:009</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=77</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="78"><span class="badge log fail-bg mr-2">Fail</span>Verify House Details Page</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="project.stepDefinitions.Us_06_House_Details.user_go_to_home_page()">
+                <span>Given user go to home page</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.216)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.2.1', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f6b769aded5abf6c52bb5cd02d7ed7a, get {url=https://www.trivago.com./}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.216, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/qz/5jh1rqtn3rq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49694}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49694/devtoo..., se:cdpVersion: 120.0.6099.216, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f6b769aded5abf6c52bb5cd02d7ed7a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:305)
+	at project.stepDefinitions.Us_06_House_Details.user_go_to_home_page(Us_06_House_Details.java:23)
+	at ✽.user go to home page(file:///Users/aycapolatkamali/IdeaProjects/Trivagooo/Trivagooo/./src/test/resources/features/Us_06_House_Details.feature:8)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.Us_06_House_Details.user_clicks_on_search_button()">
+                <span>Then user clicks on search button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.Us_06_House_Details.user_clicks_property_type_dropdown_menu()">
+                <span>Then user clicks property type dropdown menu</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.Us_06_House_Details.user_selects_the_house_apartment_checkbox()">
+                <span>When user selects the house or apartment checkbox</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.Us_06_House_Details.user_clicks_the_apply_button()">
+                <span>Then user clicks the apply button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.Us_06_House_Details.user_verify_the_house_price_is_visible()">
+                <span>And user verify the house price is visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.Us_06_House_Details.userClicksCityCenterButton()">
+                <span>And user clicks city center button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="project.stepDefinitions.Us_06_House_Details.userVerifyTopAmenitiesListIsVisible()">
+                <span>Then user verify top amenities list is visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">10</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@US09</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US09</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='74' id='75'>Submit an invalid search query and validate the error message.</a>
+<div class="">
+<span class="badge badge-default">US09 Error Handling.Submit an invalid search query and validate the error message.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@us06</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@us06</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='77' id='78'>Verify House Details Page</a>
+<div class="">
+<span class="badge badge-default">US06 Confirm that house details pages provide accurate information..Verify House Details Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@US02</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US02</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='7'>TC_02_Searching</a>
+<div class="">
+<span class="badge badge-default">US02 Verify that user can use search functionalty by destination and by dates.TC_02_Searching</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@US09_TC001</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US09_TC001</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='74' id='75'>Submit an invalid search query and validate the error message.</a>
+<div class="">
+<span class="badge badge-default">US09 Error Handling.Submit an invalid search query and validate the error message.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Us_04</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Us_04</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:17 PM</td>
+<td>
+<a href="#" class="linked" test-id='18' id='19'>Verify hotel details</a>
+<div class="">
+<span class="badge badge-default">US04 hotel details.Verify hotel details</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>9</span>
+</span>
+<p class="name">@Smoke</p>
+<p class="duration text-sm">9 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Smoke</h4>
+<span status="fail" class='badge log badge-danger'>9 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Homepage load and search bar is functional</a>
+<div class="">
+<span class="badge badge-default">US01 Homepage Navigation.Homepage load and search bar is functional</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='4'>TC01 Filtering and Sorting</a>
+<div class="">
+<span class="badge badge-default">US03 Verify that users can filter and sort search results effectively..TC01 Filtering and Sorting</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='7'>TC_02_Searching</a>
+<div class="">
+<span class="badge badge-default">US02 Verify that user can use search functionalty by destination and by dates.TC_02_Searching</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:17 PM</td>
+<td>
+<a href="#" class="linked" test-id='18' id='19'>Verify hotel details</a>
+<div class="">
+<span class="badge badge-default">US04 hotel details.Verify hotel details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='41' id='42'>User Account Management</a>
+<div class="">
+<span class="badge badge-default">US08 Confirm that user accounts can be managed successfully..User Account Management</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='43' id='44'>Verify Hotel Detail</a>
+<div class="">
+<span class="badge badge-default">US05 Verify Hotel Detail Buttons.Verify Hotel Detail</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='47' id='48'>Verify the going to booking page successfully</a>
+<div class="">
+<span class="badge badge-default">US07 Going to the booking page.Verify the going to booking page successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='74' id='75'>Submit an invalid search query and validate the error message.</a>
+<div class="">
+<span class="badge badge-default">US09 Error Handling.Submit an invalid search query and validate the error message.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='77' id='78'>Verify House Details Page</a>
+<div class="">
+<span class="badge badge-default">US06 Confirm that house details pages provide accurate information..Verify House Details Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@US07_Booking</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US07_Booking</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='47' id='48'>Verify the going to booking page successfully</a>
+<div class="">
+<span class="badge badge-default">US07 Going to the booking page.Verify the going to booking page successfully</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@US03</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US03</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='4'>TC01 Filtering and Sorting</a>
+<div class="">
+<span class="badge badge-default">US03 Verify that users can filter and sort search results effectively..TC01 Filtering and Sorting</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@US_08</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US_08</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='41' id='42'>User Account Management</a>
+<div class="">
+<span class="badge badge-default">US08 Confirm that user accounts can be managed successfully..User Account Management</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@tb_US_01</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@tb_US_01</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Homepage load and search bar is functional</a>
+<div class="">
+<span class="badge badge-default">US01 Homepage Navigation.Homepage load and search bar is functional</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.junit.ComparisonFailure</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.junit.ComparisonFailure</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>Then User should be on "https://www.trivago.com/" page</a>
+<div class="">
+<span class="badge badge-default">US01 Homepage Navigation.Homepage load and search bar is functional.Then User should be on "https://www.trivago.com/" page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:22 PM</td>
+<td>
+<a href="#" class="linked" test-id='18' id='24'>Then user selects the Hotel checkbox</a>
+<div class="">
+<span class="badge badge-default">US04 hotel details.Verify hotel details.Then user selects the Hotel checkbox</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>7</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchWindowException</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchWindowException</h4>
+<span status="fail" class='badge log badge-danger'>7 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:22 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='25'>And User clicks search button</a>
+<div class="">
+<span class="badge badge-default">US03 Verify that users can filter and sort search results effectively..TC01 Filtering and Sorting.And User clicks search button</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:23 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='26'>And user selects check in data</a>
+<div class="">
+<span class="badge badge-default">US02 Verify that user can use search functionalty by destination and by dates.TC_02_Searching.And user selects check in data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='43' id='45'>Given Client navigate to "url"</a>
+<div class="">
+<span class="badge badge-default">US05 Verify Hotel Detail Buttons.Verify Hotel Detail.Given Client navigate to "url"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='41' id='46'>Given Go to home page</a>
+<div class="">
+<span class="badge badge-default">US08 Confirm that user accounts can be managed successfully..User Account Management.Given Go to home page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='47' id='49'>Given User navigate to "url"</a>
+<div class="">
+<span class="badge badge-default">US07 Going to the booking page.Verify the going to booking page successfully.Given User navigate to "url"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='74' id='76'>Given User navigate to "url"</a>
+<div class="">
+<span class="badge badge-default">US09 Error Handling.Submit an invalid search query and validate the error message..Given User navigate to "url"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:01:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='77' id='79'>Given user go to home page</a>
+<div class="">
+<span class="badge badge-default">US06 Confirm that house details pages provide accurate information..Verify House Details Page.Given user go to home page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
